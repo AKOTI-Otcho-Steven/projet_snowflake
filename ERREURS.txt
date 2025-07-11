@@ -1,0 +1,14 @@
+--erreur nombre de colonnes de la table job_postings /  company_id n'existe pas mais on a d'autrers colonnes non mentionnées dans le travail comme company_name, med_salary,  min_salary 
+
+---erreur d'insertion colonne original_listed_time / on a été obligé de passer  de timestamp à varchar pour une meilleure insertion et manipulation future
+
+--probleme d'inserton colonne remote_allowed /  on a été obligé de  transformer  le type boolean en varchar
+
+-- probleme d'insertion colonne expiry /on a été obligé de  transformer le type timestamp en varchar
+
+- meme chose pour  la colonne closed_time 
+
+- meme chose listed_time, tous les types timestamps en gros
+
+on ne peut avoir que l'id de l'industrie pour la question 1 de la requete, parce que c'est industry_id dans la vue job_industries
+
